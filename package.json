@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "openmrs-ohri-app", 
+=======
+  "name": "openmrs-ohri-app",
+>>>>>>> origin/test
   "version": "0.6.2",
   "description": "A custom microfrontend for OpenMRS HIV Reference Implementation (OHRI)",
   "browser": "dist/openmrs-esm-ohri-app.js",
@@ -45,9 +49,9 @@
     "@carbon/icons-react": "^10.18.0",
     "carbon-components-react": "^7.25.0",
     "formik": "^2.2.6",
+    "jest-coverage-badges": "^1.1.2",
     "lodash-es": "^4.17.15",
     "moment": "^2.29.1",
-    "react-scroll": "^1.8.2",
     "systemjs-webpack-interop": "^1.1.0",
     "yup": "^0.29.1"
   },
