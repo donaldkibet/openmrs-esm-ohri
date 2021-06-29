@@ -10,7 +10,7 @@ on:
   pull_request:
     branches:  
       - '*'
-    types: [opened, synchronize, reopened, closed]
+    types: [opened, synchronize, reopened]
   release:
     types:
       - created
@@ -75,7 +75,7 @@ jobs:
 
     needs: build  
 
-    if: ${{ github.event_name == 'push' }}
+    if: ${{ github.ref == 'refs/heads/working' }}
 
     steps:
       - uses: actions/checkout@v2
@@ -117,7 +117,7 @@ jobs:
 
     needs: build  
 
-    if: ${{ github.event_name == 'test' }}
+    if: ${{ github.ref == 'refs/heads/test' }}
 
     steps:
       - uses: actions/checkout@v2
