@@ -215,9 +215,7 @@ const CohortPatientList: React.FC<{ cohortId: string; cohortSlotName: string }> 
       ) : !patients.length ? (
         <EmptyState headerTitle="Test client list" displayText="patients" />
       ) : (
-        <>
-          <ExtensionSlot extensionSlotName={cohortSlotName} state={state} key={counter} />
-        </>
+        <ExtensionSlot extensionSlotName={cohortSlotName} state={state} key={counter} />
       )}
     </div>
   );
